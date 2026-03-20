@@ -20,11 +20,10 @@ npm start
 The `start` script runs `node src/main.ts`. Node.js can execute TypeScript directly — no build step needed.
 
 > [!IMPORTANT]
-> When importing between your `.ts` files, use the `.js` extension in the import path:
+> When importing between your `.ts` files, use the `.ts` extension in the import path:
 > ```ts
-> import { Expense } from "./types.js";
+> import { Expense } from "./types.ts";
 > ```
-> TypeScript resolves `.js` imports to the corresponding `.ts` files automatically. Do **not** use `.ts` in import paths.
 
 ## What to Build
 
