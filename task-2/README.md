@@ -17,7 +17,7 @@ A starter `src/main.ts` is included so you can verify the setup works:
 npm start
 ```
 
-The `start` script runs `tsx src/main.ts`, which executes TypeScript directly — no build step needed.
+The `start` script runs `node src/main.ts`. Node.js can execute TypeScript directly — no build step needed.
 
 > [!IMPORTANT]
 > When importing between your `.ts` files, use the `.js` extension in the import path:
