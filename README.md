@@ -1,17 +1,15 @@
-# [Track] week X assignment
-HackYourFuture <Track> week X assignment
-The Week X assignment for the HackYourFuture <TRACK> can be found at the following link: [TODO: Assignment url in the learning platform]
-
+# Frontend Track Week 3 assignment
 
 ## Implementation Instructions
 
-Provide clear instructions on how trainees should implement the tasks.
-
 ### Task 1
-Instructions for Task 1
+
+You will work on a browser-based To-Do List application. The app is fully working — but it's written in JavaScript. Your job is to convert it to TypeScript.
+
+Detailed instructions for Task 1 can be found in the `task-1/README.md` file.
 
 ### Task 2
+
 Instructions for Task 2
 
 ...
-

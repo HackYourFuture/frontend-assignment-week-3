@@ -2,6 +2,15 @@
 
 A browser-based To-Do List application. The app is fully working — but it's written in JavaScript. Your job is to convert it to TypeScript.
 
+## Features
+
+- Create tasks with a title and optional description
+- Toggle task completion (checkbox + strikethrough)
+- Edit tasks inline
+- Delete tasks
+- Filter by All / Pending / Completed
+- Data persists across page refreshes (localStorage)
+
 ## Getting Started
 
 ```bash
@@ -111,12 +120,3 @@ npx tsc --noEmit
 ```
 
 It should pass with zero errors. Then test the app in the browser — everything should still work exactly as before.
-
-## Features
-
-- Create tasks with a title and optional description
-- Toggle task completion (checkbox + strikethrough)
-- Edit tasks inline
-- Delete tasks
-- Filter by All / Pending / Completed
-- Data persists across page refreshes (localStorage)
