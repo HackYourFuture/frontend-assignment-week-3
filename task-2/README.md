@@ -130,7 +130,7 @@ Choose an option: 5
 
 Don't try to build everything at once. Work through these stages, testing as you go:
 
-1. **Define your types** — create an `Expense` interface, a type for categories, and any other types you need. This is the foundation everything else builds on.
+1. **Start with your core types** — create an `Expense` interface and a type for categories. Don't try to define every type up front — add more types later as the need arises.
 2. **Build file persistence** — write functions (or a class) to read and write JSON to `data/expenses.json`. Handle the case where the file or directory doesn't exist yet (create the directory programmatically, return an empty array for a missing file).
 3. **Implement add and list** — get adding and listing expenses working first. This proves your types, persistence, and basic flow all work together.
 4. **Build the menu loop** — use `prompt-sync` (already installed) to create an interactive menu. You've used this package before — the pattern is the same.
