@@ -1,5 +1,5 @@
-import { enterEditMode } from './task-edit-view.js';
-import { escapeHtml } from './utils.js';
+import { enterEditMode } from "./task-edit-view.js";
+import { escapeHtml } from "./utils.js";
 
 export class TaskListView {
   constructor(root, handlers) {
@@ -16,8 +16,8 @@ export class TaskListView {
     this.root.innerHTML = tasks
       .map(
         (task) => String.raw`
-          <li class="task-item${task.completed ? ' completed' : ''}" data-id="${task.id}">
-            <input type="checkbox"${task.completed ? ' checked' : ''}>
+          <li class="task-item${task.completed ? " completed" : ""}" data-id="${task.id}">
+            <input type="checkbox"${task.completed ? " checked" : ""}>
             <div class="task-content">
               <div class="task-title">${escapeHtml(task.title)}</div>
               <div class="task-description">${escapeHtml(task.description)}</div>
@@ -27,25 +27,25 @@ export class TaskListView {
               <button class="delete-btn">Delete</button>
             </div>
           </li>
-        `
+        `,
       )
-      .join('');
+      .join("");
 
-    for (const li of this.root.querySelectorAll('.task-item')) {
+    for (const li of this.root.querySelectorAll(".task-item")) {
       const id = li.dataset.id;
       const task = tasks.find((t) => t.id === id);
 
       li.querySelector("input[type='checkbox']").addEventListener(
-        'change',
-        () => this.handlers.onToggle(id)
+        "change",
+        () => this.handlers.onToggle(id),
       );
 
-      li.querySelector('.edit-btn').addEventListener('click', () => {
+      li.querySelector(".edit-btn").addEventListener("click", () => {
         enterEditMode(li, task, this.handlers);
       });
 
-      li.querySelector('.delete-btn').addEventListener('click', () =>
-        this.handlers.onDelete(id)
+      li.querySelector(".delete-btn").addEventListener("click", () =>
+        this.handlers.onDelete(id),
       );
     }
   }

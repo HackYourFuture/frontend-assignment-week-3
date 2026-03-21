@@ -20,6 +20,7 @@ The `start` script runs `node src/main.ts`. Node.js can execute TypeScript direc
 
 > [!IMPORTANT]
 > When importing between your `.ts` files, use the `.ts` extension in the import path:
+>
 > ```ts
 > import { Expense } from "./types.ts";
 > ```
